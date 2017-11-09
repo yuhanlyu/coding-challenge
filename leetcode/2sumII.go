@@ -3,10 +3,8 @@
 
 func twoSum(numbers []int, target int) []int {
     index1, index2 := 0, len(numbers) - 1
-    for index1 < index2 {
-        if numbers[index1] + numbers[index2] == target {
-            break
-        } else if numbers[index1] + numbers[index2] < target {
+    for numbers[index1] + numbers[index2] != target {
+        if numbers[index1] + numbers[index2] < target {
             index1++
         } else {
             index2--
